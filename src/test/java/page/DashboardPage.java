@@ -12,7 +12,7 @@ import static java.awt.SystemColor.text;
 
 
 public class DashboardPage {
-    private final SelenideElement heading = $("[data-test-id=dashboard]");
+    private final SelenideElement heading = $("[data-test-id='dashboard']");
 
 
     public DashboardPage(){

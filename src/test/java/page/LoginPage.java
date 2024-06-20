@@ -9,10 +9,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static java.awt.SystemColor.info;
 
 public class LoginPage {
-    private final SelenideElement loginField = $("[data-test-id=login] input");
-    private final SelenideElement passwordField = $("[data-test-id=password] input");
-    private final SelenideElement loginButton = $("[data-test-id=action-login]");
-    private final SelenideElement errorNotification = $("[data-test-id=error-notification]");
+    private final SelenideElement loginField = $("[data-test-id='login'] input");
+    private final SelenideElement passwordField = $("[data-test-id='password'] input");
+    private final SelenideElement loginButton = $("[data-test-id='action-login']");
+    private final SelenideElement errorNotification = $("[data-test-id='error-notification'] .notification__content");
 
     public void verifyErrorNotification(String expectedText) {
         errorNotification.shouldHave(exactText(expectedText)).shouldBe(visible);
